@@ -67,7 +67,7 @@
     }
 
     .forgot {
-        color: rgba(26, 212, 168, .5);
+        color: rgb(114, 0, 214);
         -webkit-transition: .2s ease-in-out color;
         -moz-transition: .2s ease-in-out color;
         -o-transition: .2s ease-in-out color;
@@ -75,7 +75,7 @@
     }
 
     .forgot:hover {
-        color: #1ad4a8;
+        color: rgba(197, 110, 246, 0.98);
         text-decoration: none;
     }
 </style>

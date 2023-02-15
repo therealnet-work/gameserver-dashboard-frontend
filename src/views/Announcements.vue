@@ -6,12 +6,12 @@
 
         <template #content>
             <div class="bg-primary-500 min-w-[300px] rounded">
-                <div class="text-opacity-75 px-3 py-2 border-b border-white/10">
+                <div class="text-black px-3 py-2 border-b border-black/10">
                     <t path="generic.announcements" />
                 </div>
 
                 <div class="overflow-y-scroll max-h-[30vh]" v-if="user?.hasUnreadAnnouncements()">
-                    <announcement v-for="(announcement, idx) of user?.announcements" :announcement="announcement" :key="idx "/>
+                    <announcement v-for="(announcement, idx) of user?.announcements" :announcement="announcement" :key="idx " />
                 </div>
 
                 <div class="text-black-75 text-center py-4" v-else>

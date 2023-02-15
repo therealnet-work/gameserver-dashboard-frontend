@@ -1,11 +1,11 @@
 <template>
     <div :class="requiresMargin ? `mb-4` : ''">
-        <label class="text-white opacity-50 tracking-wide uppercase block mb-3" :for="id" v-if="labelStr">
+        <label class="text-black opacity-50 tracking-wide uppercase block mb-3" :for="id" v-if="labelStr">
             <t :path="labelStr" />
         </label>
 
         <div class="flex">
-            <div v-if="prefix" class="flex items-center bg-primary-400 rounded-l text-white-opacity-75 p-4 border-r border-white/10">
+            <div v-if="prefix" class="flex items-center bg-primary-400 rounded-l text-black-opacity-75 p-4 border-r border-primary-450">
                 <t :path="prefix" />
             </div>
 
@@ -51,7 +51,7 @@
                 v-else
             >
 
-            <div v-if="suffix" class="flex items-center bg-primary-400 rounded-r text-white-opacity-75 p-4 border-l border-white/10">
+            <div v-if="suffix" class="flex items-center bg-primary-400 rounded-r text-black-opacity-75 p-4 border-l border-primary-450">
                 <t :path="suffix" />
             </div>
 
@@ -59,7 +59,7 @@
         </div>
 
 
-        <p class="text-white text-opacity-25 small mt-1" v-if="footer">
+        <p class="text-black text-opacity-25 small mt-1" v-if="footer">
             <t :path="footer" />
         </p>
 

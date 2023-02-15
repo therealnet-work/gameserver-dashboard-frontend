@@ -2,13 +2,13 @@
     <div class="p-2 pl-3" :class="`notification-${notification.type}`">
         <!-- TODO: if notification is clicked on, mark itself as read and possibly close the notification menu? -->
         <component :is="url ? 'router-link' : 'div'" :to="{name: url?.[0], params: url?.[1]}">
-            <div class="mb-1 text-white">
+            <div class="mb-1 text-black">
                 <fa :icon="['fas', notification.icon]" />
                 <span class="ml-1">
                     <t :path="title" />
                 </span>
             </div>
-            <p class="text-white">
+            <p class="text-black">
                 <t :path="message" />
             </p>
             <div class="mt-1">

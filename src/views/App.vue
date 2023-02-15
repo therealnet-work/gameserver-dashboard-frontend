@@ -2,7 +2,7 @@
     <div id="modal-target" />
 
     <router-view v-if="ready" />
-    <div v-else class="flex w-full h-screen items-center justify-center py-5 text-white text-2xl opacity-50">
+    <div v-else class="flex w-full h-screen items-center justify-center py-5 text-black text-2xl opacity-50">
         {{ loadingMessage }}
     </div>
 </template>

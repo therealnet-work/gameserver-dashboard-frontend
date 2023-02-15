@@ -7,7 +7,7 @@
                 :to="{ name: tab.name, params: tab.params }"
 
                 class="first:border-l-0 border-l border-primary-400 px-4 py-3"
-                :class="tab.active ? ['text-white', 'border-t-2 border-t-accent-200/75'] : []"
+                :class="tab.active ? ['text-black', 'border-t-2 border-t-accent-300/75'] : []"
 
                 :permission="tab.permission"
                 span-class="flex"

@@ -6,10 +6,10 @@
                     <server-card v-for="(result, idx) of results" :key="idx" :server="result" />
                 </div>
                 <div v-else class="flex flex-col lg:flex-row justify-center items-center my-8">
-                    <img class="w-2/3 lg:w-1/3" :src="notFound" />
+                    <img class="w-2/3 lg:w-1/3" :src="notFound">
 
                     <div class="text-center gap-y-8 mt-4 lg:mt-0 lg:ml-4 lg:text-left">
-                        <h1 class="text-2xl text-white/75">
+                        <h1 class="text-2xl text-black/75">
                             <t path="generic.server.no_servers" />
                         </h1>
 
@@ -21,7 +21,7 @@
 
                                 <i18n-t keypath="generic.server.no_servers_description_admin">
                                     <template #link>
-                                        <v-button :to="{ name: 'admin.management.servers.index' }" class="text-white/75">
+                                        <v-button :to="{ name: 'admin.management.servers.index' }" class="text-black/75">
                                             <t path="generic.here" />
                                         </v-button>
                                     </template>

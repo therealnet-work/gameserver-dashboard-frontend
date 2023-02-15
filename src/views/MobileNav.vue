@@ -8,7 +8,7 @@
         </div>
 
         <section v-show="open" class=" flex flex-col flex-grow">
-            <div v-if="server" class="border-b border-white border-opacity-10 text-white text-opacity-75">
+            <div v-if="server" class="border-b border-white border-opacity-10 text-black text-opacity-75">
                 <server-widget />
             </div>
 
@@ -27,7 +27,7 @@
                         <li v-else class="px-6 py-3" :key="`1-${idx}`">
                             <v-button :to="{name: route.name, params: route.params}" :permission="route.permission" class="router-link flex justify-between" @click="open = false">
                                 <p><t :path="`navigation.${route.displayName}.title`" /></p>
-                                <p :class="route.active ? ['text-accent-500'] : ['text-white']">
+                                <p :class="route.active ? ['text-accent-500'] : ['text-black']">
                                     &bull;
                                 </p>
                             </v-button>
@@ -38,7 +38,7 @@
 
             <div class="justify-end z-10">
                 <div class="flex items-center py-3 bg-primary-800 border-t border-white border-opacity-10">
-                    <v-button :to="{name: adminRoute}" class="mx-auto relative text-lg text-white text-opacity-50 hover:text-opacity-80" v-if="user?.rootAdmin || user?.supportOp">
+                    <v-button :to="{name: adminRoute}" class="mx-auto relative text-lg text-black text-opacity-50 hover:text-opacity-80" v-if="user?.rootAdmin || user?.supportOp">
                         <fa :icon="['fas', 'cogs']" class="cursor-pointer" />
                     </v-button>
                     <div class="mx-auto relative" v-if="announcementsEnabled">
@@ -56,17 +56,17 @@
                     <div>
                         <p>{{ user?.fullName }}</p>
                         <!-- TODO: come up with better use cases for "roles" until we have rbac -->
-                        <p class="uppercase text-sm text-white text-opacity-40 tracking-wider" v-if="user?.rootAdmin">
+                        <p class="uppercase text-sm text-black text-opacity-40 tracking-wider" v-if="user?.rootAdmin">
                             admin
                         </p>
-                        <p class="uppercase text-sm text-white text-opacity-40 tracking-wider" v-else-if="user?.supportOp">
+                        <p class="uppercase text-sm text-black text-opacity-40 tracking-wider" v-else-if="user?.supportOp">
                             support op
                         </p>
-                        <p class="uppercase text-sm text-white text-opacity-40 tracking-wider" v-else>
+                        <p class="uppercase text-sm text-black text-opacity-40 tracking-wider" v-else>
                             user
                         </p>
                     </div>
-                    <v-button class="ml-auto mr-3 text-lg text-white text-opacity-50 hover:text-opacity-80" @click="logout" spinner>
+                    <v-button class="ml-auto mr-3 text-lg text-black text-opacity-50 hover:text-opacity-80" @click="logout" spinner>
                         <fa :icon="['fas', 'sign-out-alt']" class="icon" />
                     </v-button>
                 </div>

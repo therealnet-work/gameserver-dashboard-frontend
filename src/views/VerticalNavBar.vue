@@ -1,13 +1,13 @@
 <template>
     <div class="h-screen flex flex-col items-stretch fixed w-full md:w-64 nav-primary z-40">
-        <div class="flex justify-between items-center border-b border-white border-opacity-10 py-4 px-6">
+        <div class="flex justify-between items-center border-b border-black border-opacity-10 py-4 px-6">
             <router-link :to="{name: 'index'}">
                 <img :src="logo" class="h-8" :alt="name">
             </router-link>
         </div>
 
         <section class="flex flex-col flex-grow">
-            <div v-if="server" class="border-b border-white border-opacity-10 text-black text-opacity-75">
+            <div v-if="server" class="border-b border-black border-opacity-10 text-black text-opacity-75">
                 <server-widget />
             </div>
 
@@ -16,7 +16,7 @@
                     <template v-for="(route, idx) of routes">
                         <nav-dropdown v-if="route.routes" :name="`navigation.${route.name}.title`" :active="route.active" :key="idx">
                             <ul>
-                                <li v-for="(child, childIdx) of route.routes" class="px-3 py-2 border-l border-white border-opacity-10" :key="childIdx">
+                                <li v-for="(child, childIdx) of route.routes" class="px-3 py-2 border-l border-black border-opacity-10" :key="childIdx">
                                     <v-button :to="{name: child.name, params: child.params}" :permission="child.permission" class="router-link flex justify-between" @click="open = false">
                                         <p><t :path="`navigation.${child.displayName}.title`" /></p>
                                     </v-button>
@@ -36,7 +36,7 @@
             </nav>
 
             <div class="justify-end z-10">
-                <div class="flex items-center py-3 bg-primary-800 border-t border-white border-opacity-10">
+                <div class="flex items-center py-3 bg-primary-800 border-t border-black border-opacity-10">
                     <v-button v-tippy="`generic.admin_area`" :to="{name: adminRoute}" class="mx-auto relative text-lg text-black text-opacity-50 hover:text-opacity-80" v-if="user?.rootAdmin || user?.supportOp">
                         <fa :icon="['fas', 'cogs']" class="cursor-pointer" />
                     </v-button>
@@ -48,24 +48,24 @@
                     </div>
                 </div>
 
-                <div class="flex items-center px-6 py-3 bg-primary-800 border-t border-white border-opacity-10">
+                <div class="flex items-center px-6 py-3 bg-primary-800 border-t border-black border-opacity-10">
                     <router-link :to="{name: 'account.settings.details'}">
-                        <avatar :email="user?.email" class="rounded-full h-10 mr-3" />
-                    </router-link>
-                    <div>
-                        <p>{{ user?.fullName }}</p>
+                        <p class="text-sm text-black tracking-wider">
+                            {{ user?.fullName }}
+                        </p>
                         <!-- TODO: come up with better use cases for "roles" until we have rbac -->
-                        <p class="uppercase text-sm text-white text-opacity-40 tracking-wider" v-if="user?.rootAdmin">
+                        <p class="uppercase text-sm text-red-600 tracking-wider" v-if="user?.rootAdmin">
                             admin
                         </p>
-                        <p class="uppercase text-sm text-white text-opacity-40 tracking-wider" v-else-if="user?.supportOp">
+                        <p class="uppercase text-sm text-red-400 tracking-wider" v-else-if="user?.supportOp">
                             support op
                         </p>
-                        <p class="uppercase text-sm text-white text-opacity-40 tracking-wider" v-else>
+                        <p class="uppercase text-sm text-black text-opacity-40 tracking-wider" v-else>
                             user
                         </p>
-                    </div>
-                    <v-button class="ml-auto mr-3 text-lg text-white text-opacity-50 hover:text-opacity-80" @click="logout" spinner>
+                    </router-link>
+
+                    <v-button class="ml-auto mr-3 text-lg text-black text-opacity-50 hover:text-opacity-80" @click="logout" spinner>
                         <fa :icon="['fas', 'sign-out-alt']" class="icon" />
                     </v-button>
                 </div>

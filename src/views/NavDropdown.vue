@@ -1,10 +1,10 @@
 <template>
     <li :class="open ? ['bg-primary-900'] : ['border-opacity-0']" class="border-t first:border-t-0 border-primary-500">
         <div @click="open = !open" class="flex justify-between cursor-pointer px-6 py-3">
-            <p class="text-white text-opacity-75">
+            <p class="text-black text-opacity-75">
                 <t :path="name" />
             </p>
-            <span class="transition-transform" :class="[active ? ['text-accent-500'] : ['text-white'], open ? ['rotate-90'] : []]">
+            <span class="transition-transform" :class="[active ? ['text-accent-500'] : ['text-black'], open ? ['rotate-90'] : []]">
                 <fa class="text-xs" :icon="['fas', `chevron-right`]" />
             </span>
         </div>
