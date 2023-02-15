@@ -7,7 +7,7 @@
         </div>
 
         <section class="flex flex-col flex-grow">
-            <div v-if="server" class="border-b border-white border-opacity-10 text-white text-opacity-75">
+            <div v-if="server" class="border-b border-white border-opacity-10 text-black text-opacity-75">
                 <server-widget />
             </div>
 
@@ -26,7 +26,7 @@
                         <li v-else class="px-6 py-3" :key="`1-${idx}`">
                             <v-button :to="{name: route.name, params: route.params}" :permission="route.permission" class="router-link flex justify-between" span-class="!block" @click="open = false">
                                 <p><t :path="`navigation.${route.displayName}.title`" /></p>
-                                <p :class="route.active ? ['text-accent-500'] : ['text-white']">
+                                <p :class="route.active ? ['text-accent-500'] : ['text-black']">
                                     &bull;
                                 </p>
                             </v-button>
@@ -37,7 +37,7 @@
 
             <div class="justify-end z-10">
                 <div class="flex items-center py-3 bg-primary-800 border-t border-white border-opacity-10">
-                    <v-button v-tippy="`generic.admin_area`" :to="{name: adminRoute}" class="mx-auto relative text-lg text-white text-opacity-50 hover:text-opacity-80" v-if="user?.rootAdmin || user?.supportOp">
+                    <v-button v-tippy="`generic.admin_area`" :to="{name: adminRoute}" class="mx-auto relative text-lg text-black text-opacity-50 hover:text-opacity-80" v-if="user?.rootAdmin || user?.supportOp">
                         <fa :icon="['fas', 'cogs']" class="cursor-pointer" />
                     </v-button>
                     <div class="mx-auto relative" v-if="announcementsEnabled" v-tippy="`generic.announcements`">
@@ -76,7 +76,7 @@
 
 <style scoped>
     .nav-primary {
-        background: #121026;
+        background: #FFF;
         color: #B8B9BE;
     }
 

@@ -9,8 +9,8 @@ if (import.meta.env.DEV && !window.Wisp) {
     window.Wisp = {
         Debug: true,
 
-        Node: 'local',
-        Version: 'dev',
+        Node: 'frontend',
+        Version: '0.0.1',
 
         BaseURL: import.meta.env.VITE_PANEL_URL || alert('No base URL configured') || '',
     };

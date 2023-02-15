@@ -21,7 +21,7 @@
                             <fa :icon="['fas', currentRoute.icon]" :key="currentRoute.icon" class="text-xl md:text-3xl" />
                         </div>
                         <div class="flex flex-col flex-grow header justify-center">
-                            <h1 class="text-white font-light text-header">
+                            <h1 class="text-black font-light text-header">
                                 <t :path="`navigation.${currentRoute.name}.title`" />
                             </h1>
                             <small class="text-base">
@@ -52,7 +52,7 @@
 
 <style lang="scss" scoped>
 .breadcrumb {
-    @apply text-white;
+    @apply text-black;
 
     &:not(:last-child) {
         @apply mr-3 text-opacity-50;
@@ -65,7 +65,7 @@
     }
 
     &:last-child {
-        @apply text-white text-opacity-75;
+        @apply text-black text-opacity-75;
     }
 }
 
@@ -74,8 +74,8 @@
 }
 
 .header-icon {
-    color: #1ad4a8;
-    background: rgba(26, 212, 168, .2);
+    color: #7200d6;
+    background: rgba(114, 0, 214, .2);
     border-radius: 9999px;
 }
 

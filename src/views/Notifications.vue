@@ -1,6 +1,6 @@
 <template>
     <popper :placement="placement">
-        <button :class="user?.hasUnreadNotifications() ? ['badge-new'] : []" class="mx-auto relative text-lg text-white text-opacity-50 hover:text-opacity-80">
+        <button :class="user?.hasUnreadNotifications() ? ['badge-new'] : []" class="mx-auto relative text-lg text-black text-opacity-50 hover:text-opacity-80">
             <fa :icon="['fas', 'bell']" class="cursor-pointer" />
         </button>
 
@@ -14,7 +14,7 @@
                     <notification v-for="(notification, idx) of user?.notifications" :notification="notification" :key="idx" />
                 </div>
 
-                <div class="text-white-75 text-center py-4" v-else>
+                <div class="text-black-75 text-center py-4" v-else>
                     <t path="generic.none" />
                 </div>
 

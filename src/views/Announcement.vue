@@ -1,6 +1,6 @@
 <template>
     <div class="p-2 pl-3" :class="`notification-${announcement.type}`">
-        <p class="text-white">
+        <p class="text-black">
             {{ announcement.text }}
         </p>
     </div>

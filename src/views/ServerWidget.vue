@@ -4,7 +4,7 @@
             <p class="line-clamp-1 max-w-lg">
                 {{ server?.name }}
             </p>
-            <p v-clipboard class="text-sm text-white text-opacity-40">
+            <p v-clipboard class="text-sm text-black text-opacity-40">
                 {{ server?.primaryAllocation()?.displayName() }}
             </p>
         </div>

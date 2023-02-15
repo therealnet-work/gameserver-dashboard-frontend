@@ -11,7 +11,7 @@ body, html {
 }
 
 body {
-  @apply bg-primary-600 text-white text-opacity-50 font-normal;
+  @apply bg-primary-600 text-black text-opacity-50 font-normal;
 
   font-size: 16px;
   line-height: 1.6;
@@ -22,7 +22,7 @@ body {
 }
 
 .router-link {
-  @apply text-white text-opacity-75 hover:text-white;
+  @apply text-black text-opacity-75 hover:text-black;
 }
 
 .router-link-exact-active {
@@ -72,7 +72,7 @@ button {
   }
 
   &.btn-secondary {
-    @apply text-white text-opacity-75 hover:text-opacity-60;
+    @apply text-black text-opacity-75 hover:text-opacity-60;
   }
 
   &.btn-info {
@@ -110,7 +110,7 @@ button {
   }
 
   svg {
-    @apply text-white text-opacity-20 text-3xl;
+    @apply text-black text-opacity-20 text-3xl;
   }
 
   // what the fuck is this, im no web dev man
@@ -145,7 +145,7 @@ button {
   }
 
   &.label-secondary, &.label-default {
-    @apply text-white text-opacity-50 bg-primary-500;
+    @apply text-black text-opacity-50 bg-primary-500;
   }
 
   &.label-success {
@@ -174,7 +174,7 @@ button {
     border-none
     outline-none
     shadow-none
-    text-white text-opacity-75
+    text-black text-opacity-75
     h-unset
     w-full
     py-4 px-5
@@ -360,7 +360,7 @@ button {
 }
 
 .ace_gutter {
-  @apply bg-none border-primary-400 border-r text-white text-opacity-50;
+  @apply bg-none border-primary-400 border-r text-black text-opacity-50;
 }
 
 .ace_gutter-layer {
@@ -394,11 +394,11 @@ button {
 }
 
 .ace_search_form, .ace_replace_form {
-  @apply flex text-white;
+  @apply flex text-black;
 }
 
 .ace_search_field, .ace_replace_field {
-  @apply bg-primary-400 text-white mr-2;
+  @apply bg-primary-400 text-black mr-2;
   border-color: #121026 !important;
 }
 
