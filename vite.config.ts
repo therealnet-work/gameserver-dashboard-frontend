@@ -83,7 +83,7 @@ const config: UserConfig = {
             sourceMaps: {
                 include: ['./dist/panel'],
                 ignore: ['node_modules'],
-                urlPrefix: '~/assets/panel',
+                urlPrefix: '~/panel',
             },
 
             setCommits: {
