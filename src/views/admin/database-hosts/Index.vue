@@ -11,7 +11,7 @@
         </template>
 
         <template #field-name="{ result }">
-            <v-button :to="{ name: 'admin.management.database_hosts.manage', params: { databaseHost: result.id } }" permission="database_host.read" class="text-white/75">
+            <v-button :to="{ name: 'admin.management.database_hosts.manage', params: { databaseHost: result.id } }" permission="database_host.read" class="text-black/75">
                 {{ result.name }}
             </v-button>
         </template>
@@ -21,7 +21,7 @@
         </template>
 
         <template #field-node="{ result }">
-            <v-button v-if="result.node" :to="{ name: 'admin.management.nodes.manage.about', params: { node: result.node.id } }" permission="node.read" class="text-white/75">
+            <v-button v-if="result.node" :to="{ name: 'admin.management.nodes.manage.about', params: { node: result.node.id } }" permission="node.read" class="text-black/75">
                 {{ result.node.name }}
             </v-button>
         </template>

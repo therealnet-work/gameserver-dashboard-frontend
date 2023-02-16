@@ -68,7 +68,7 @@
                             <fa :icon="['fas', 'folder']" size="lg" fixed-width />
                         </td>
                         <td class="p-6 w-1/2" colspan="4">
-                            <v-button class="text-white text-opacity-50 hover:text-opacity-80" @click="navigateDirectory('/')">
+                            <v-button class="text-black text-opacity-50 hover:text-opacity-80" @click="navigateDirectory('/')">
                                 ←
                             </v-button>
                         </td>
@@ -78,7 +78,7 @@
                             <fa :icon="['fas', 'folder']" size="lg" fixed-width />
                         </td>
                         <td class="p-6 w-1/2" colspan="4">
-                            <v-button class="text-white text-opacity-50 hover:text-opacity-80" @click="navigateDirectory('..')">
+                            <v-button class="text-black text-opacity-50 hover:text-opacity-80" @click="navigateDirectory('..')">
                                 ← {{ getPreviousDirectory() }}
                             </v-button>
                         </td>
@@ -96,7 +96,7 @@
                         </tr>
                         <tr>
                             <td colspan="20" class="bg-accent-200/75 w-full">
-                                <div :style="`width:${Math.round(file.uploaded_size / file.size * 100)}%`" class="overflow-hidden h-2 transition transition-transform ease-in-out shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-info m-[-1px]" />
+                                <div :style="`width:${Math.round(file.uploaded_size / file.size * 100)}%`" class="overflow-hidden h-2 transition transition-transform ease-in-out shadow-none flex flex-col text-center whitespace-nowrap text-black justify-center bg-info m-[-1px]" />
                             </td>
                         </tr>
                     </template>
@@ -104,12 +104,12 @@
 
                 <template #field-name="{ result }">
                     <template v-if="result.isDirectory">
-                        <v-button class="text-white text-opacity-50 group-hover:text-opacity-100" @click="navigateDirectory(result.name)">
+                        <v-button class="text-black text-opacity-50 group-hover:text-opacity-100" @click="navigateDirectory(result.name)">
                             {{ result.name }}
                         </v-button>
                     </template>
                     <template v-else>
-                        <v-button :to="{name: 'server.management.files.edit', hash: `#${path}${path.endsWith('/') ? '' : '/'}${result.name}`}" v-if="result.isReadable" permission="file.read" class="text-white text-opacity-50 group-hover:text-opacity-100">
+                        <v-button :to="{name: 'server.management.files.edit', hash: `#${path}${path.endsWith('/') ? '' : '/'}${result.name}`}" v-if="result.isReadable" permission="file.read" class="text-black text-opacity-50 group-hover:text-opacity-100">
                             {{ result.name }}
                         </v-button>
                         <template v-else>

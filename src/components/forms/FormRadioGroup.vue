@@ -1,7 +1,7 @@
 <template>
     <!-- TODO(@havasu): fix padding/margins to be more consistent, also if the screen is too small it'll have the buttons overlap each other :/ -->
     <div class="my-4">
-        <label class="text-white opacity-50 tracking-wide uppercase block mb-4" v-if="!hideLabel">
+        <label class="text-black opacity-50 tracking-wide uppercase block mb-4" v-if="!hideLabel">
             <t :path="label" />
         </label>
 
@@ -12,7 +12,7 @@
             </label>
         </div>
 
-        <p class="text-white text-opacity-25 small mt-2" v-if="footer">
+        <p class="text-black text-opacity-25 small mt-2" v-if="footer">
             <t :path="footer" />
         </p>
     </div>

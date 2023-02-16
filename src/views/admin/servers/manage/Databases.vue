@@ -10,7 +10,7 @@
                     </template>
 
                     <template #field-host="{ result }">
-                        <v-button class="text-white/75" permission="database_host.read" :to="{ name: 'admin.management.database_hosts.manage', params: { databaseHost: result.host.id } }">
+                        <v-button class="text-black/75" permission="database_host.read" :to="{ name: 'admin.management.database_hosts.manage', params: { databaseHost: result.host.id } }">
                             {{ result.host.name }}
                         </v-button>
                     </template>

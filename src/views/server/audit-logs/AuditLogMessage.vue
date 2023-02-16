@@ -2,7 +2,7 @@
     <i18n-t :keypath="`${audit.translationKey}.message`" tag="p" class="break-words">
         <template #user v-if="audit.user">
             <avatar :email="audit.user.email" class="rounded-lg h-7 inline-block" />
-            <span class="text-white ml-2">
+            <span class="text-black ml-2">
                 {{ audit.user.fullName }}
             </span>
         </template>
@@ -12,7 +12,7 @@
             #[key]
             :key="key"
         >
-            <span class="text-white">
+            <span class="text-black">
                 {{ audit.metadata[key] }}
             </span>
         </template>

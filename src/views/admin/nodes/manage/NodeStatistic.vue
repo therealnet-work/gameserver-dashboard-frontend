@@ -4,7 +4,7 @@
             <div class="p-4 flex relative z-20">
                 <fa class="mr-4"  :class="color" :icon="['fas', icon]" size="2x" />
                 <div>
-                    <h3 class="text-white/75">
+                    <h3 class="text-black/75">
                         <t :path="`${name}`" />
                     </h3>
                     <p>

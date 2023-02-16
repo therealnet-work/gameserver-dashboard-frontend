@@ -19,10 +19,10 @@
                 <div v-if="results.length > 0">
                     <accordion class="mb-2" :name="['_raw', data.path]" v-for="data of results" :key="data.path">
                         <template #extra>
-                            <span class="label bg-primary-100 text-white mr-2">
+                            <span class="label bg-primary-100 text-black mr-2">
                                 <t :path="['generic.results', data.detections.length]" />
                             </span>
-                            <span class="label text-white mr-2" :class="`label-${mappedState[data.detections[0].level][0]}`">
+                            <span class="label text-black mr-2" :class="`label-${mappedState[data.detections[0].level][0]}`">
                                 <t :path="`server.backdoor_scanner.levels.${mappedState[data.detections[0].level][1]}`" />
                             </span>
                         </template>

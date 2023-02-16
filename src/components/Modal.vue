@@ -19,11 +19,11 @@
                             <fa :icon="['fas', 'times']" />
                         </div>
 
-                        <div v-if="title" class="border-b border-white border-opacity-10 text-white text-opacity-75 mb-3 pb-3">
+                        <div v-if="title" class="border-b border-white border-opacity-10 text-black text-opacity-75 mb-3 pb-3">
                             <h1 class="text-xl">
                                 <t :path="title" />
                             </h1>
-                            <p v-if="description" class="text-white text-opacity-25 text-sm">
+                            <p v-if="description" class="text-black text-opacity-25 text-sm">
                                 <t :path="description" />
                             </p>
                         </div>

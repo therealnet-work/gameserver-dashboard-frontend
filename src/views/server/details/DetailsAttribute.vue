@@ -4,10 +4,10 @@
             <fa :icon="['fas', icon]" fixed-width class="text-accent-500 text-2xl" />
         </div>
         <div class="flex-grow ml-3">
-            <h6 class="text-white text-opacity-75 uppercase">
+            <h6 class="text-black text-opacity-75 uppercase">
                 <t :path="name" />
             </h6>
-            <p class="text-white text-opacity-50">
+            <p class="text-black text-opacity-50">
                 <skeleton :content="skeleton">
                     <slot>
                         {{ finalValue }}

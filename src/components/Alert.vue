@@ -6,12 +6,12 @@
         </div>
         <div class="flex-grow">
             <div class="flex flex-col justify-center h-full">
-                <p class="text-white opacity-75 w-full">
+                <p class="text-black opacity-75 w-full">
                     <t :path="title" />
                 </p>
                 <ul v-if="messages">
                     <li v-for="(message, idx) of messages" :key="idx">
-                        <p class="text-white opacity-50">
+                        <p class="text-black opacity-50">
                             • <t :path="message" />
                         </p>
                     </li>

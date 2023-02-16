@@ -3,7 +3,7 @@
         <div class="flex items-center gap-x-20">
             <div class="flex-grow space-y-8">
                 <div>
-                    <label class="text-white opacity-50 tracking-wide uppercase block mb-3" for="address">
+                    <label class="text-black opacity-50 tracking-wide uppercase block mb-3" for="address">
                         <t path="components.form.fields.connection_address" />
                     </label>
 
@@ -17,7 +17,7 @@
                 </div>
 
                 <div>
-                    <label class="text-white opacity-50 tracking-wide uppercase block mb-3" for="name">
+                    <label class="text-black opacity-50 tracking-wide uppercase block mb-3" for="name">
                         <t path="components.form.fields.username" />
                     </label>
 

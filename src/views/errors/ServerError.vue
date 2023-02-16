@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col justify-center items-center flex-grow">
         <div class="text-center">
-            <h1 class="text-white font-bold text-5xl">
+            <h1 class="text-black font-bold text-5xl">
                 <t :path="`${error.title[0]}.title`" />
             </h1>
             <p class="py-2 text-xl">

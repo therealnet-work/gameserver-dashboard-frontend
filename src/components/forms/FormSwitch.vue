@@ -14,11 +14,11 @@
         </div>
 
         <div class="mt-4 lg:ml-4 lg:mt-0">
-            <label class="text-white opacity-50 tracking-wide uppercase block" :for="id" v-if="labelStr" @click="toggle">
+            <label class="text-black opacity-50 tracking-wide uppercase block" :for="id" v-if="labelStr" @click="toggle">
                 <t :path="labelStr" />
             </label>
 
-            <p class="text-white text-opacity-25 small mt-1" v-if="footer">
+            <p class="text-black text-opacity-25 small mt-1" v-if="footer">
                 <t :path="footer" />
             </p>
         </div>

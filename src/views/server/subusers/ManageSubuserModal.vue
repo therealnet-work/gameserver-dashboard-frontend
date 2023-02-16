@@ -37,7 +37,7 @@
                             >
                         </template>
 
-                        <p class="text-white/25 mb-4">
+                        <p class="text-black/25 mb-4">
                             <t :path="`permissions.${name}.description`" />
                         </p>
 
@@ -60,7 +60,7 @@
                                     <t :path="`permissions.${permission.name.replace(/:/g, '.')}.title`" />
                                 </h2>
 
-                                <p class="text-sm text-white/25">
+                                <p class="text-sm text-black/25">
                                     <t :path="`permissions.${permission.name.replace(/:/g, '.')}.description`" />
                                 </p>
                             </div>

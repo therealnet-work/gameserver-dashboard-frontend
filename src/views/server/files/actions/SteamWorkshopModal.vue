@@ -25,7 +25,7 @@
 
                 <template #step-3>
                     <div class="flex items-center p-3 mb-2 bg-primary-400 rounded" v-for="item of status.slice(0, 10)" :key="item.name">
-                        <p class="flex-grow text-white text-opacity-75">
+                        <p class="flex-grow text-black text-opacity-75">
                             {{ item.name }}
                         </p>
                         <span :class="['label', `label-${LabelLookup[item.status[0]]}`]">
@@ -33,7 +33,7 @@
                         </span>
                     </div>
                     <div class="flex items-center p-3 mb-2 bg-primary-400 rounded" v-if="status.length > 10">
-                        <p class="text-white text-opacity-75">
+                        <p class="text-black text-opacity-75">
                             <t :path="['server.files.steam_workshop_n_more', status.length - 10]" />
                         </p>
                     </div>

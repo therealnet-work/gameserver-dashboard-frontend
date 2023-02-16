@@ -20,7 +20,7 @@
                         <v-input name="branch" rule="required" />
                         <div v-if="requiresAuth">
                             <v-input type="password" name="access_token" rule="required" no-margin />
-                            <a class="text-white text-opacity-50" href="https://github.com/settings/tokens" target="_blank">
+                            <a class="text-black text-opacity-50" href="https://github.com/settings/tokens" target="_blank">
                                 <t path="server.files.get_access_token_here" />
                             </a>
                         </div>

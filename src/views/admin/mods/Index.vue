@@ -9,7 +9,7 @@
         </template>
 
         <template #field-name="{ result }">
-            <v-button class="text-white/75" permission="mod.read" :to="{ name: 'admin.service_management.mods.manage', params: { mod: result.id } }">
+            <v-button class="text-black/75" permission="mod.read" :to="{ name: 'admin.service_management.mods.manage', params: { mod: result.id } }">
                 {{ result.name }}
             </v-button>
         </template>

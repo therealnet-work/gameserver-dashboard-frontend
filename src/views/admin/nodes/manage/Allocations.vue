@@ -15,7 +15,7 @@
                 </template>
 
                 <template #field-server="{ result }">
-                    <v-button v-if="result.server" permission="server.read" :to="{ name: 'admin.management.servers.manage.about', params: { server: result.server.id } }" class="text-white/75">
+                    <v-button v-if="result.server" permission="server.read" :to="{ name: 'admin.management.servers.manage.about', params: { server: result.server.id } }" class="text-black/75">
                         {{ result.server.name }}
                     </v-button>
                 </template>

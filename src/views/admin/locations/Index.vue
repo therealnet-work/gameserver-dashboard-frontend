@@ -11,7 +11,7 @@
         </template>
 
         <template #field-short="{ result }">
-            <v-button permission="location.read" :to="{ name: 'admin.management.locations.manage', params: { location: result.id } }" class="text-white/75">
+            <v-button permission="location.read" :to="{ name: 'admin.management.locations.manage', params: { location: result.id } }" class="text-black/75">
                 {{ result.short }}
             </v-button>
         </template>

@@ -35,7 +35,7 @@
             </skeleton>
         </p>
 
-        <div class="text-white/75 mt-3">
+        <div class="text-black/75 mt-3">
             <p class="inline-block mr-2">
                 <skeleton :content="6">
                     <t path="server.startup.input_rules" />

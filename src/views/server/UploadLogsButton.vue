@@ -1,7 +1,7 @@
 <template>
     <modal title="server.logs.upload_logs">
         <template #opener="{ open }">
-            <v-button v-tippy="'server.console.upload_logs'" permission="control.console" class="p-4 hover:text-white" @click="open">
+            <v-button v-tippy="'server.console.upload_logs'" permission="control.console" class="p-4 hover:text-black" @click="open">
                 <fa :icon="['fas', 'upload']" size="lg" />
             </v-button>
         </template>

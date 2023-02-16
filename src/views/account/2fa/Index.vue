@@ -1,7 +1,7 @@
 <template>
     <div class="grid lg:grid-cols-3 xl:grid-cols-4 gap-4 items-start">
         <container title="client.security.2fa">
-            <p class="text-white text-opacity-70 mb-4">
+            <p class="text-black text-opacity-70 mb-4">
                 <t :path="`client.security.2fa_${user.mfaMethods?.includes('totp') ? 'enabled' : 'disabled'}`" />
             </p>
 

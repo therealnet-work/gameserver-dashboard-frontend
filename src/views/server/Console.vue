@@ -17,7 +17,7 @@
             />
             <div class="flex flex-row items-center justify-center pr-2">
                 <upload-logs-button />
-                <v-button v-tippy="'server.console.console_popup'" class="p-4 hover:text-white" @click="server?.openConsolePopup()">
+                <v-button v-tippy="'server.console.console_popup'" class="p-4 hover:text-black" @click="server?.openConsolePopup()">
                     <fa :icon="['fas', 'external-link-square-alt']" size="lg" />
                 </v-button>
             </div>

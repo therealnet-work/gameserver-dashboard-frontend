@@ -17,7 +17,7 @@
         </template>
 
         <template #field-name="{ result }">
-            <v-button permission="node.read" :to="{ name: 'admin.management.nodes.manage.about', params: { node: result.id } }" class="text-white/75">
+            <v-button permission="node.read" :to="{ name: 'admin.management.nodes.manage.about', params: { node: result.id } }" class="text-black/75">
                 {{ result.name }}
             </v-button>
         </template>

@@ -8,7 +8,7 @@
         </template>
 
         <template #field-name="{ result }">
-            <v-button class="text-white/75" permission="nest.update" :to="{ name: 'admin.service_management.nests.manage', params: { nest: result.id } }">
+            <v-button class="text-black/75" permission="nest.update" :to="{ name: 'admin.service_management.nests.manage', params: { nest: result.id } }">
                 {{ result.name }}
             </v-button>
         </template>

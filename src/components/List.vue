@@ -38,7 +38,7 @@
                                         This is the best option as there most likely isnt a case where there will be over 20 headers.
                                         Without this it'd only span a % of the width of the table.
                                         -->
-                                    <td colspan="20" class="p-32 text-center text-2xl text-white text-opacity-75">
+                                    <td colspan="20" class="p-32 text-center text-2xl text-black text-opacity-75">
                                         <t path="generic.no_items" />
                                     </td>
                                 </tr>
@@ -62,7 +62,7 @@
                                     <td class="block xl:hidden">
                                         <div class="flex flex-row flex-wrap">
                                             <div v-for="(field, fieldIdx) in fields" :key="fieldIdx" class="w-full px-4 py-3 text-left sm:w-1/2" :style="field.style">
-                                                <h5 class="text-white/75 font-semibold uppercase">
+                                                <h5 class="text-black/75 font-semibold uppercase">
                                                     <skeleton :content="12">
                                                         <t :path="`components.table.labels.${field.label ?? field.key}`" />
                                                     </skeleton>

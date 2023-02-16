@@ -49,7 +49,7 @@
                 </template>
 
                 <template #field-server="{ result }">
-                    <v-button v-if="result.server" :to="{ name: 'admin.management.servers.manage.databases', params: { server: result.server.id } }" permission="server_database.read" class="text-white/75">
+                    <v-button v-if="result.server" :to="{ name: 'admin.management.servers.manage.databases', params: { server: result.server.id } }" permission="server_database.read" class="text-black/75">
                         {{ result.server.name }}
                     </v-button>
                 </template>

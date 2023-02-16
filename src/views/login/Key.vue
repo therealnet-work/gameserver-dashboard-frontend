@@ -1,7 +1,7 @@
 <template>
     <div class="bg-primary-500 p-8 rounded-lg">
         <div class="text-center my-8">
-            <fa :icon="['fas', 'fingerprint']" class="h-20 text-white/30" />
+            <fa :icon="['fas', 'fingerprint']" class="h-20 text-black/30" />
         </div>
 
         <div class="mt-4 text-center">
@@ -11,7 +11,7 @@
 
             <p class="mt-2">
                 <t path="login.security_keys.not_responding" />
-                <span class="text-white/75 cursor-pointer" @click="triggerChallenge">
+                <span class="text-black/75 cursor-pointer" @click="triggerChallenge">
                     <t path="login.security_keys.not_responding_click_here" />
                 </span>
             </p>

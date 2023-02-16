@@ -9,10 +9,10 @@
                         </skeleton>
 
                         <skeleton :content="12">
-                            <h2 class="text-lg text-white/75">
+                            <h2 class="text-lg text-black/75">
                                 {{ schedule.name }}
                             </h2>
-                            <p class="text-white/50 ml-2">
+                            <p class="text-black/50 ml-2">
                                 <t :path="['server.schedules.runs_description', { description: cronDescription }]" />
                             </p>
                         </skeleton>
@@ -34,7 +34,7 @@
             <div class="pb-2 border-b border-primary-400">
                 <div class="flex justify-between rounded overflow-hidden">
                     <div class="cron_time w-1/4 bg-primary-600 px-6 py-4">
-                        <h2 class="text-lg text-white/75 font-light">
+                        <h2 class="text-lg text-black/75 font-light">
                             <t path="components.form.fields.cron_minute" />
                         </h2>
 
@@ -46,7 +46,7 @@
                     </div>
 
                     <div class="cron_time w-1/4 bg-primary-600 px-6 py-4">
-                        <h2 class="text-lg text-white/75 font-light">
+                        <h2 class="text-lg text-black/75 font-light">
                             <t path="components.form.fields.cron_hour" />
                         </h2>
                         <skeleton :content="8">
@@ -57,7 +57,7 @@
                     </div>
 
                     <div class="cron_time w-1/4 bg-primary-600 px-6 py-4">
-                        <h2 class="text-lg text-white/75 font-light">
+                        <h2 class="text-lg text-black/75 font-light">
                             <t path="components.form.fields.cron_day_of_month" />
                         </h2>
                         <skeleton :content="8">
@@ -68,7 +68,7 @@
                     </div>
 
                     <div class="cron_time w-1/4 bg-primary-600 px-6 py-4">
-                        <h2 class="text-lg text-white/75 font-light">
+                        <h2 class="text-lg text-black/75 font-light">
                             <t path="components.form.fields.cron_day_of_week" />
                         </h2>
                         <skeleton :content="8">
@@ -80,11 +80,11 @@
                 </div>
 
                 <div class="flex justify-between px-4 mt-2">
-                    <p class="text-white/50">
-                        <t path="server.schedules.last_run_at" /><span class="text-white/75">{{ lastRunAt }}</span>
+                    <p class="text-black/50">
+                        <t path="server.schedules.last_run_at" /><span class="text-black/75">{{ lastRunAt }}</span>
                     </p>
-                    <p class="text-white/50">
-                        <t path="server.schedules.next_run_at" /><span class="text-white/75">{{ nextRunAt }}</span>
+                    <p class="text-black/50">
+                        <t path="server.schedules.next_run_at" /><span class="text-black/75">{{ nextRunAt }}</span>
                     </p>
                 </div>
             </div>
@@ -92,7 +92,7 @@
             <div class="space-y-4 mt-4">
                 <template v-for="task in tasks" :key="task.sequenceId">
                     <div v-if="task.timeOffset > 0" class="flex items-center pl-4">
-                        <fa :icon="['fas', 'stopwatch']" class="text-2xl text-white/75 mr-3" />
+                        <fa :icon="['fas', 'stopwatch']" class="text-2xl text-black/75 mr-3" />
 
                         <p>
                             <t :path="['server.schedules.pause_for_seconds', { seconds: task.timeOffset }]" />
@@ -101,7 +101,7 @@
 
                     <div class="flex bg-primary-600 px-6 py-4 rounded-lg items-center justify-between">
                         <div class="flex items-center flex-grow">
-                            <p class="text-2xl text-white font-bold">
+                            <p class="text-2xl text-black font-bold">
                                 {{ task.sequenceId }}
                             </p>
 

@@ -9,11 +9,11 @@
                         </div>
                     </skeleton>
                     <div class="flex flex-col mt-4 lg:mt-0 lg:ml-8">
-                        <p class="flex-grow text-white text-opacity-75">
+                        <p class="flex-grow text-black text-opacity-75">
                             <t path="client.security.2fa_notice" />
                         </p>
 
-                        <label class="text-white opacity-50 tracking-wide uppercase block my-3" for="secret">
+                        <label class="text-black opacity-50 tracking-wide uppercase block my-3" for="secret">
                             <t path="client.security.2fa_secret" />
                         </label>
                         <skeleton :content="32">

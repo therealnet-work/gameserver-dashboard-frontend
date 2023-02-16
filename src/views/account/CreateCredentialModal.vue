@@ -1,6 +1,6 @@
 <template>
     <modal opener-text="generic.create" v-slot="{ close }">
-        <h1 class="text-xl text-white text-opacity-75 mb-6">
+        <h1 class="text-xl text-black text-opacity-75 mb-6">
             <t path="client.security.create_credentials" />
         </h1>
 

@@ -1,5 +1,5 @@
 <template>
-    <fa v-if="loadingFirst" :icon="['fas', 'spinner']" class="text-2xl text-white/75" spin />
+    <fa v-if="loadingFirst" :icon="['fas', 'spinner']" class="text-2xl text-black/75" spin />
     <fa v-else-if="runningVersion" v-tippy="runningVersion" :icon="['fas', 'heartbeat']" class="text-2xl text-accent-200" />
     <fa v-else v-tippy="`admin.nodes.not_alive`" :icon="['far', 'heart']" class="text-2xl text-danger" />
 </template>

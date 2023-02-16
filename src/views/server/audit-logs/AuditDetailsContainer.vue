@@ -11,7 +11,7 @@
                 </span>
 
                 <div>
-                    <h1 class="text-white text-xl">
+                    <h1 class="text-black text-xl">
                         <t :path="`${audit.translationKey}.title`" />
                     </h1>
 
@@ -22,7 +22,7 @@
             <audit-log-message :audit="audit" :key="audit" class="p-4 my-4 border border-white/10 rounded-lg" />
 
             <div class="border border-white/10 rounded-lg overflow-hidden p-4" v-if="Object.keys(audit.metadata.changes || {}).length > 0">
-                <div class="text-white/75 rounded-t-lg">
+                <div class="text-black/75 rounded-t-lg">
                     <t path="generic.changes" />
                 </div>
 
@@ -46,11 +46,11 @@
                             </template>
 
                             <template #old>
-                                <span class="text-white">{{ value[0] }}</span>
+                                <span class="text-black">{{ value[0] }}</span>
                             </template>
 
                             <template #new>
-                                <span class="text-white">{{ value[1] }}</span>
+                                <span class="text-black">{{ value[1] }}</span>
                             </template>
                         </i18n-t>
                     </div>
@@ -58,7 +58,7 @@
             </div>
 
             <div class="border border-white/10 rounded-lg mt-4 overflow-hidden" v-if="metaKeys.length">
-                <div class="p-4 text-white/75 rounded-t-lg">
+                <div class="p-4 text-black/75 rounded-t-lg">
                     <t path="generic.metadata" />
                 </div>
 
@@ -72,8 +72,8 @@
                             <td class="p-4">
                                 {{ key[1] }}
                             </td>
-                            <td class="p-4 break-all text-white">
-                                <a v-if="isValidLink(audit.metadata[key[0]])" class="text-white/75" target="_blank" rel="noopener noreferrer" :href="audit.metadata[key[0]]">
+                            <td class="p-4 break-all text-black">
+                                <a v-if="isValidLink(audit.metadata[key[0]])" class="text-black/75" target="_blank" rel="noopener noreferrer" :href="audit.metadata[key[0]]">
                                     {{ audit.metadata[key[0]] }}
                                 </a>
                                 <template v-else>
@@ -86,7 +86,7 @@
             </div>
 
             <div class="border border-white/10 rounded-lg mt-4 overflow-hidden" v-if="hasDeviceInfo">
-                <div class="p-4 text-white/75 rounded-t-lg">
+                <div class="p-4 text-black/75 rounded-t-lg">
                     <t path="generic.device_information" />
                 </div>
 
@@ -96,7 +96,7 @@
                             <td class="p-4">
                                 <t path="server.audit_logs.device.city" />
                             </td>
-                            <td class="p-4 text-white">
+                            <td class="p-4 text-black">
                                 {{ audit.device.cityName }}
                             </td>
                         </tr>
@@ -104,7 +104,7 @@
                             <td class="p-4">
                                 <t path="server.audit_logs.device.country" />
                             </td>
-                            <td class="p-4 text-white">
+                            <td class="p-4 text-black">
                                 {{ audit.device.countryName ?? 'UNKNOWN' }} ({{ audit.device.countryIsoCode ?? 'UNKNOWN' }})
                             </td>
                         </tr>

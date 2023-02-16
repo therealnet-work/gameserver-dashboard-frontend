@@ -22,7 +22,7 @@
             </template>
 
             <template #field-name="{ result }">
-                <v-button class="text-white/75" :to="{ name: 'server.configuration.schedules.manage', params: { schedule: result.id } }" permission="schedule.read">
+                <v-button class="text-black/75" :to="{ name: 'server.configuration.schedules.manage', params: { schedule: result.id } }" permission="schedule.read">
                     {{ result.name }}
                 </v-button>
             </template>

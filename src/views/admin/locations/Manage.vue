@@ -10,7 +10,7 @@
                 <container no-padding class="mb-4" title="admin.locations.nodes">
                     <list :service-id="location?.nodes || []" :fields="listFields">
                         <template #field-name="{ result }">
-                            <v-button :to="{ name: 'admin.management.nodes.manage.about', params: { node: result.id } }" permission="node.read" class="text-white/75">
+                            <v-button :to="{ name: 'admin.management.nodes.manage.about', params: { node: result.id } }" permission="node.read" class="text-black/75">
                                 {{ result.name }}
                             </v-button>
                         </template>

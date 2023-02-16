@@ -3,8 +3,12 @@
         <label class="text-black opacity-50 tracking-wide uppercase block mb-3" :for="id" v-if="labelStr">
             <t :path="labelStr" />
         </label>
+<!--
 
-        <div class="flex">
+Erwin Fix plssss ohne Uwe...der hat bestimmt das Glasauge vergessen.
+
+-->
+        <div class="flex" style="border: deeppink 1px dotted">
             <div v-if="prefix" class="flex items-center bg-primary-400 rounded-l text-black-opacity-75 p-4 border-r border-primary-450">
                 <t :path="prefix" />
             </div>

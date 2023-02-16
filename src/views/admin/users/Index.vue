@@ -30,7 +30,7 @@
         </template>
 
         <template #field-fullName="{ result }">
-            <v-button permission="user.read" :to="{ name: 'admin.management.users.manage.about', params: { user: result.id } }" class="flex items-center text-white/75">
+            <v-button permission="user.read" :to="{ name: 'admin.management.users.manage.about', params: { user: result.id } }" class="flex items-center text-black/75">
                 <avatar :email="result.email" class="rounded-full h-10 mr-4" />
 
                 {{ result.fullName }}

@@ -1,6 +1,6 @@
 <template>
     <div :class="requiresMargin ? 'mb-4' : ''">
-        <label class="text-white opacity-50 tracking-wide uppercase block mb-3" :for="id" v-if="labelStr">
+        <label class="text-black opacity-50 tracking-wide uppercase block mb-3" :for="id" v-if="labelStr">
             <t :path="labelStr" />
         </label>
 
@@ -51,7 +51,7 @@
             </template>
 
             <template #tag="{ option, handleTagRemove, disabled: tagDisabled }">
-                <div class="flex bg-primary-800 items-center px-2 py-1 rounded text-white text-opacity-75 text-sm cursor-text whitespace-nowrap">
+                <div class="flex bg-primary-800 items-center px-2 py-1 rounded text-black text-opacity-75 text-sm cursor-text whitespace-nowrap">
                     {{ option[labelProp ?? 'label'] }}
                     <fa v-if="!tagDisabled" :icon="['fas', 'times']" @click.prevent @mousedown.prevent.stop="handleTagRemove(option, $event)" class="cursor-pointer text-base text-accent-500 ml-2" />
                 </div>
@@ -90,7 +90,7 @@
             </template>
         </multiselect>
 
-        <p class="text-white text-opacity-25 small mt-1" v-if="footer">
+        <p class="text-black text-opacity-25 small mt-1" v-if="footer">
             <t :path="footer" />
         </p>
 
@@ -116,7 +116,7 @@
 }
 
 .multiselect {
-    @apply bg-primary-400 rounded-md border-none;
+    @apply bg-primary-400 rounded-md;
 
     &.is-active {
         @apply shadow-none;
@@ -132,27 +132,27 @@
 }
 
 .multiselect-dropdown {
-    @apply bg-primary-800 border-primary-300 rounded-b-md border-none;
+    @apply bg-primary-800 border-primary-300 rounded-b-md;
 }
 
 .multiselect-option {
-    @apply flex min-h-[40px] py-2 px-3 text-white text-opacity-75 cursor-pointer;
+    @apply flex min-h-[40px] py-2 px-3 text-black text-opacity-75 cursor-pointer;
 
     &.is-selected {
         @apply bg-accent-200 hover:bg-accent-500;
     }
 
     &.is-pointed {
-        @apply bg-primary-300 text-white;
+        @apply bg-primary-300 text-black;
     }
 }
 
 .multiselect-single-label {
-    @apply text-white/75 px-5;
+    @apply text-black/75 px-5;
 }
 
 .multiselect-group-label {
-    @apply bg-primary-600 text-white text-opacity-75 py-2 px-3 text-base;
+    @apply bg-primary-600 text-black text-opacity-75 py-2 px-3 text-base;
 }
 
 .multiselect-tags {

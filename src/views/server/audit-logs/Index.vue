@@ -22,7 +22,7 @@
                         <img class="w-2/3 lg:w-1/3" :src="notFound" />
 
                         <div class="text-center gap-y-8 mt-4 lg:mt-0 lg:ml-4 lg:text-left">
-                            <h1 class="text-2xl text-white/75">
+                            <h1 class="text-2xl text-black/75">
                                 <t path="server.audit_logs.no_audits" />
                             </h1>
 

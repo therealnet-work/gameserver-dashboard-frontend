@@ -38,11 +38,11 @@
                     </td>
                     <td class="p-4">
                         <skeleton :content="24">
-                            <v-button permission="nest.read" :to="{ name: 'admin.service_management.nests.manage', params: { nest: server.nest.id } }" class="text-white/75 hover:text-white">
+                            <v-button permission="nest.read" :to="{ name: 'admin.service_management.nests.manage', params: { nest: server.nest.id } }" class="text-black/75 hover:text-black">
                                 {{ server.nest.name }}
                             </v-button>
                             -
-                            <v-button permission="egg.read" :to="{ name: 'admin.service_management.nests.egg.configuration', params: { nest: server.nest.id, egg: server.egg.id } }" class="text-white/75 hover:text-white">
+                            <v-button permission="egg.read" :to="{ name: 'admin.service_management.nests.egg.configuration', params: { nest: server.nest.id, egg: server.egg.id } }" class="text-black/75 hover:text-black">
                                 {{ server.egg.name }}
                             </v-button>
                         </skeleton>
@@ -135,7 +135,7 @@
             <div class="bg-primary-500 p-4 rounded-lg">
                 <div class="bg-primary-300 rounded-lg">
                     <div class="flex p-4">
-                        <div class="grow text-white/75 hover:text-white/100">
+                        <div class="grow text-black/75 hover:text-black/100">
                             <h1 class="text-3xl font-semibold tracking-wide">
                                 <skeleton :content="12">
                                     {{ server.user.fullName }}
@@ -153,7 +153,7 @@
 
                     <div class="text-center border-t border-white/25 py-2">
                         <skeleton :content="8">
-                            <v-button class="text-white/75 hover:text-white" permission="user.read" :to="{ name: 'admin.management.users.manage.about', params: { user: server.user.id } }">
+                            <v-button class="text-black/75 hover:text-black" permission="user.read" :to="{ name: 'admin.management.users.manage.about', params: { user: server.user.id } }">
                                 <t path="generic.more_info" />
                             </v-button>
                         </skeleton>
@@ -161,7 +161,7 @@
                 </div>
 
                 <div class="bg-primary-300 rounded-lg mt-4">
-                    <div class="p-4 text-white/75 hover:text-white/100">
+                    <div class="p-4 text-black/75 hover:text-black/100">
                         <h1 class="text-3xl font-semibold tracking-wide">
                             <skeleton :content="12">
                                 {{ server.node.name }}
@@ -174,7 +174,7 @@
 
                     <div class="text-center border-t border-white/25 py-2">
                         <skeleton :content="8">
-                            <v-button class="text-white/75 hover:text-white" permission="node.read" :to="{ name: 'admin.management.nodes.manage.about', params: { node: server.node.id } }">
+                            <v-button class="text-black/75 hover:text-black" permission="node.read" :to="{ name: 'admin.management.nodes.manage.about', params: { node: server.node.id } }">
                                 <t path="generic.more_info" />
                             </v-button>
                         </skeleton>

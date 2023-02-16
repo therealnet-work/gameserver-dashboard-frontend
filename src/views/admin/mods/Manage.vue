@@ -27,7 +27,7 @@
 
         <div>
             <container title="admin.mods.mod_configuration">
-                <label class="text-white opacity-50 tracking-wide uppercase block mb-3">
+                <label class="text-black opacity-50 tracking-wide uppercase block mb-3">
                     <t path="components.form.fields.script_install" />
                 </label>
 
@@ -35,7 +35,7 @@
                     <v-editor name="script_install" path="install.sh" height="small" :value="mod?.scriptInstall" />
                 </skeleton>
 
-                <label class="text-white opacity-50 tracking-wide uppercase block mb-3">
+                <label class="text-black opacity-50 tracking-wide uppercase block mb-3">
                     <t path="components.form.fields.script_uninstall" />
                 </label>
 

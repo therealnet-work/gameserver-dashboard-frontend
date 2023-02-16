@@ -16,7 +16,7 @@
                         01
                     </h2>
 
-                    <h2 class="text-white/75 text-lg mx-4">
+                    <h2 class="text-black/75 text-lg mx-4">
                         <t path="server.fastdl.click_button" />
                     </h2>
 
@@ -30,7 +30,7 @@
                         02
                     </h2>
 
-                    <i18n-t keypath="server.fastdl.enable_fastdl" class="text-white/75 ml-3" tag="p">
+                    <i18n-t keypath="server.fastdl.enable_fastdl" class="text-black/75 ml-3" tag="p">
                         <template #code>
                             <code>
                                 sv_downloadurl "{{ fastDlUrl }}"

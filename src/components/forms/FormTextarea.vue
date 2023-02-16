@@ -1,6 +1,6 @@
 <template>
     <div :class="requiresMargin ? `mb-4` : ''">
-        <label class="text-white opacity-50 tracking-wide uppercase block mb-3" :for="id" v-if="labelStr">
+        <label class="text-black opacity-50 tracking-wide uppercase block mb-3" :for="id" v-if="labelStr">
             <t :path="labelStr" />
         </label>
 
@@ -20,7 +20,7 @@
         />
 
 
-        <p class="text-white text-opacity-25 small mt-1" v-if="footer">
+        <p class="text-black text-opacity-25 small mt-1" v-if="footer">
             <t :path="footer" />
         </p>
 

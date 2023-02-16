@@ -17,7 +17,7 @@
                 <server-status-indicator :server="result" />
 
                 <div class="ml-4">
-                    <v-button permission="server.read" :to="{ name: 'admin.management.servers.manage.about', params: { server: result.id } }" class="text-white/75">
+                    <v-button permission="server.read" :to="{ name: 'admin.management.servers.manage.about', params: { server: result.id } }" class="text-black/75">
                         {{ result.name }}
                     </v-button>
 
@@ -32,14 +32,14 @@
         <template #field-owner="{ result }">
             <div class="flex items-center">
                 <avatar :email="result.user.email" class="rounded-full h-10" />
-                <v-button permission="user.read" :to="{ name: 'admin.management.users.manage.about', params: { user: result.user.id } }" class="text-white/75 grow pl-4">
+                <v-button permission="user.read" :to="{ name: 'admin.management.users.manage.about', params: { user: result.user.id } }" class="text-black/75 grow pl-4">
                     {{ result.user.fullName }}
                 </v-button>
             </div>
         </template>
 
         <template #field-node="{ result }">
-            <v-button permission="node.read" :to="{ name: 'admin.management.nodes.manage.about', params: { node: result.node.id } }" class="text-white/75">
+            <v-button permission="node.read" :to="{ name: 'admin.management.nodes.manage.about', params: { node: result.node.id } }" class="text-black/75">
                 {{ result.node.name }}
             </v-button>
         </template>

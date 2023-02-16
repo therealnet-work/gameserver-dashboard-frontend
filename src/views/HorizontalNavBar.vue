@@ -7,13 +7,13 @@
                         <img :src="logo" class="h-10" :alt="name">
                     </router-link>
                 </div>
-                <div v-if="server" class="flex ml-4 text-white text-opacity-75">
+                <div v-if="server" class="flex ml-4 text-black text-opacity-75">
                     <server-widget />
                 </div>
             </div>
 
             <div class="flex justify-end items-center py-3 space-x-12">
-                <v-button :to="{name: adminRoute}" class="relative text-lg text-white text-opacity-50 hover:text-opacity-80" v-if="user?.rootAdmin || user?.supportOp">
+                <v-button :to="{name: adminRoute}" class="relative text-lg text-black text-opacity-50 hover:text-opacity-80" v-if="user?.rootAdmin || user?.supportOp">
                     <fa :icon="['fas', 'cogs']" class="cursor-pointer" />
                 </v-button>
                 <div class="mx-auto relative" v-if="announcementsEnabled">
@@ -23,7 +23,7 @@
                     <notifications />
                 </div>
 
-                <v-button class="ml-auto mr-3 text-lg text-white text-opacity-50 hover:text-opacity-80" @click="logout" spinner>
+                <v-button class="ml-auto mr-3 text-lg text-black text-opacity-50 hover:text-opacity-80" @click="logout" spinner>
                     <fa :icon="['fas', 'sign-out-alt']" />
                 </v-button>
 

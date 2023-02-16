@@ -30,7 +30,7 @@
 
                         <accordion class="mb-2" :name="['_raw', name]" v-for="(data, name) of results.files" :key="name">
                             <template #extra>
-                                <span class="label bg-primary-100 text-white mr-2">
+                                <span class="label bg-primary-100 text-black mr-2">
                                     <t :path="['generic.results', data.results]" />
                                 </span>
                             </template>

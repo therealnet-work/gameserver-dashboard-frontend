@@ -39,7 +39,7 @@
             <can permission="egg.read">
                 <list service-id="eggs@getAll" :fields="listFields">
                     <template #field-name="{ result }">
-                        <v-button class="text-white/75" permission="egg.read" :to="{ name: 'admin.service_management.nests.egg.configuration', params: { egg: result.id } }">
+                        <v-button class="text-black/75" permission="egg.read" :to="{ name: 'admin.service_management.nests.egg.configuration', params: { egg: result.id } }">
                             {{ result.name }}
                         </v-button>
                     </template>
